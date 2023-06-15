@@ -8,7 +8,7 @@ for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 {
 	putchar(alphabet);
 }
-for (alphabet = 'z'; alphabet >= 'a'; alphabet--)
+for (alphabet = 'A'; alphabet <= 'Z'; alphabet++)
 {
 	putchar(alphabet);
 }
