@@ -8,12 +8,14 @@ int main(void)
 {
 	int intType;
 	float floatType;
-	double doubleType;
+	long int longintType;
+	long long longlongType;
 	char charType;
 
-	printf("Size of int: %zu bytes\n", sizeof(intType));
-	printf("Size of float: %zu bytes\n", sizeof(floatType));
-	printf("Size of double: %zu bytes\n", sizeof(doubleType));
+	printf("Size of an int: %zu bytes\n", sizeof(intType));
+	printf("Size of a float: %zu bytes\n", sizeof(floatType));
+	printf("Size of a long int: %zu bytes\n", sizeof(longintType));
+	printf("Size of a long long: %zu bytes\n", sizeof(longlongType));
 	printf("Size of char: %zu bytes\n", sizeof(charType));
 
 	return (0);
