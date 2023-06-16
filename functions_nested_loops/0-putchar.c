@@ -1,12 +1,14 @@
 #include <unistd.h>
+#include <string.h>
 #include "main.h"
 
 int
-_putchar(char c)
+main(void)
 {
-	for (c = '0'; c <= '7'; c++)
-	{
-		_putchar(c);
-	}
-	return (0);
+char frase[] = "_putchar";
+int i;
+for (i = '0'; i <= '7'; i++)
+_putchar(frase[i]);
+_putchar('\n');
+return (0);
 }
