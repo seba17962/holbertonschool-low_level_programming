@@ -3,13 +3,17 @@
 int
 main(void)
 {
-int n1;
-for (n1 = 0; n1 <= 9; n1++)
+int number;
+for (number = '0'; number <= '9'; number++)
 {
-putchar(n1);
-putchar(',');
-putchar(' ');
-}
-putchar('\n');
-return (0);
+	putchar(number);
+	if (number == '9')
+	{
+		break;
+	}
+	putchar(',');
+	putchar(' ');
+	}
+	putchar('\n');
+	return (0);
 }
