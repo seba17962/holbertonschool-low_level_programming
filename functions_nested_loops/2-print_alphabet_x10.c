@@ -3,14 +3,18 @@
 #include "main.h"
 
 void
-print_alphabetx10(void)
+print_alphabet_x10(void)
 {
-int count;
-for (count = 0; count <= 9; ++count)
-{
-char i;
-	for (i = 'a'; i <= 'z'; i++)
-	_putchar(i);
+	char c;
+	int count = 0;
+
+	while (count <= 9)
+	{
+	for (c = 'a'; c <= 'z'; c++)
+	{
+		_putchar(c);
+	}
 	_putchar('\n');
-}
+	count++;
+	}
 }
