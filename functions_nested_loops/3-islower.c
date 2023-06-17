@@ -2,20 +2,13 @@
 #include <string.h>
 #include "main.h"
 
-/**
- * main - check the code.
- *
- *Return: Always 0.
- */
-int main(void)
+int
+_islower(int c)
 {
-	int c;
-
 	if (_islower(c))
 	{
-		_putchar('1');
+		return ('1');
 	}
 	else
-		_putchar('0');
-
+		return ('0');
 }
