@@ -5,7 +5,7 @@
 /**
  * main - print 'n' times "#"
  *
- *Return: 0
+ *
  */
 
 int main(void)
