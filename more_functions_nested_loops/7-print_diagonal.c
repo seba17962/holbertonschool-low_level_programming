@@ -9,10 +9,6 @@
 
 void print_diagonal(int n)
 {
-	/**
-	 *b: is de blanc space
-	 *
-	 */
 	int c = 0;
 	int b = 0;
 
@@ -20,11 +16,14 @@ void print_diagonal(int n)
 	{
 		while (c < n)
 		{
-			while (b < n)
+			if (c != 0)
 			{
 				_putchar(' ');
-				b++;
+			}
+			while (b < n)
+			{
 				_putchar(92);
+				_putchar('\n');
 			}
 			_putchar('\n');
 			c++;
