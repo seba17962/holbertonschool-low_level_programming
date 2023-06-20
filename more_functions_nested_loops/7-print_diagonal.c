@@ -10,19 +10,18 @@
 void print_diagonal(int n)
 {
 	int c = 0;
-	int b = 0;
+	int b;
 
 	if (n != 0)
 	{
 		while (c < n)
 		{
-			_putchar(' ');
-			while (b < n)
-			{
-				_putchar(92);
-				_putchar('\n');
-			}
+			_putchar(92);
 			_putchar('\n');
+			for (b = 0; b < n; b++)
+			{
+				_putchar(' ');
+			}
 			c++;
 		}
 	}
