@@ -10,9 +10,9 @@
 
 void _puts(char *str)
 {
-char leter = -1;
+char leter = 0;
 
-while (*str++)
+while (*str)
 {
 	_putchar(*str);
 	leter++;
