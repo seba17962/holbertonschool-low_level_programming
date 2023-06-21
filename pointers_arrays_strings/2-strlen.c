@@ -12,7 +12,7 @@ int _strlen(char *str)
 {
 int len = 0;
 
-for (len = 0; *str != '\n'; len++)
-	_putchar(len);
+while (*str++)
+	len++;
 return (len);
 }
