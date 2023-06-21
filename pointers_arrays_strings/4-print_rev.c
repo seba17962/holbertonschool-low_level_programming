@@ -8,7 +8,7 @@
  */
 
 
-void print_rev(char *s)
+void print_rev(char *str)
 {
 	while (*str)
 	{
