@@ -10,7 +10,6 @@
 
 void print_rev(char *str)
 {
-	*str = '\0';
 	while (*str)
 	{
 		_putchar(*str--);
