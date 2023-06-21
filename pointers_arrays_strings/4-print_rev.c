@@ -10,9 +10,10 @@
 
 void print_rev(char *str)
 {
-	for (*str = '\0'; *str >= 0; *str--)
+	*str = '\0';
+	while (*str)
 	{
-		_putchar(*str);
+		_putchar(*str--);
 	}
 _putchar('\n');
 
