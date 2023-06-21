@@ -4,7 +4,7 @@
  *_puts - print a string.
  *
  *@str: string
- * 
+ *
  */
 
 
@@ -14,7 +14,7 @@ char leter = 0;
 
 while (*str++)
 {
-	_putchar(leter);
+	_putchar(*str);
 	leter++;
 }
 _putchar('\n');
