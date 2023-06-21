@@ -12,7 +12,7 @@ void _puts(char *str)
 {
 char leter = 0;
 
-while (*str)
+while (*str != '\n')
 {
 	_putchar(*str);
 	leter++;
