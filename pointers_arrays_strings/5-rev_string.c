@@ -15,7 +15,7 @@ void rev_string(char *s)
 
 	srev = s;
 
-	while (s[c] != '\0')
+	while (srev[c] != '\0')
 		c++;
 
 	while (c > 0)
