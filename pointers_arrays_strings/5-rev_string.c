@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- *print_rev - print a string.
+ *rev_string - print a string.
  *
  *@s: string
  *
  */
 
 
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	int c = 0;
 	char *srev;
