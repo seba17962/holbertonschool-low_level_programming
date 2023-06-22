@@ -16,11 +16,13 @@ void rev_string(char *s)
 	char *begin;
 	char aux;
 
+	begin = s;
 	srev = s;
 	while (srev[c] != '\0')
 	{
 		c++;
 	}
+	end = s + c- 1;
 
 	for (i = 0; i < (c - 1) / 2; i++)
 	{
