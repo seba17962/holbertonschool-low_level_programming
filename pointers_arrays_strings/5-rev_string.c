@@ -11,16 +11,21 @@
 void rev_string(char *s)
 {
 	int c = 0;
-	char *srev;
-
-	srev = s;
+	char *end;
+	char *begin;
+	char aux;
 
 	while (srev[c] != '\0')
-		c++;
-
-	for (c = '\0'; c >= 0; c--)
 	{
-		*s = srev[c];
+		c++;
 	}
-	_putchar('\n');
+
+	for (i = 0; i < (c - 1)/2 ; i++)
+	{
+		aux = *begin;
+		*begin = *end;
+		end* = aux;
+		begin++;
+		end++;
+	}
 }
