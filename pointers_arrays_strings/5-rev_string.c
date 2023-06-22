@@ -11,7 +11,7 @@
 void print_rev(char *s)
 {
 	int c = 0;
-	char srev[c];
+	char *srev;
 
 	while (s[c] != '\0')
 		c++;
@@ -19,7 +19,7 @@ void print_rev(char *s)
 	while (c > 0)
 	{
 		c--;
-		*s = srev[c];
+		s[c] = srev;
 	}
 	_putchar('\n');
 }
