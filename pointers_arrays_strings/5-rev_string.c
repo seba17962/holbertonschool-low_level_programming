@@ -10,7 +10,7 @@
 
 void rev_string(char *s)
 {
-	int c = 0;
+	int c = 0, i;
 	char *srev = s;
 	char *end;
 	char *begin;
@@ -21,7 +21,7 @@ void rev_string(char *s)
 		c++;
 	}
 
-	for (int i = 0; i < (c - 1) / 2; i++)
+	for (i = 0; i < (c - 1) / 2; i++)
 	{
 		aux = *begin;
 		*begin = *end;
