@@ -22,7 +22,7 @@ void rev_string(char *s)
 	{
 		c++;
 	}
-	end = s + c- 1;
+	end = s + c - 1;
 
 	for (i = 0; i < (c - 1) / 2; i++)
 	{
@@ -30,6 +30,6 @@ void rev_string(char *s)
 		*begin = *end;
 		*end = aux;
 		begin++;
-		end++;
+		end--;
 	}
 }
