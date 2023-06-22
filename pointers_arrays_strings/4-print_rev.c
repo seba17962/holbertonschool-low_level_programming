@@ -3,17 +3,21 @@
 /**
  *print_rev - print a string.
  *
- *@str: string
+ *@s: string
  *
  */
 
 
-void print_rev(char *str)
+void print_rev(char *s)
 {
-	while (*str)
-	{
-		_putchar(*str--);
-	}
-_putchar('\n');
+	int c = 0;
+
+	while (*s != '\0')
+		c++;
+
+	for (; c >= 0; c--)
+		_putchar(*s);
+
+	_putchar('\n');
 
 }
