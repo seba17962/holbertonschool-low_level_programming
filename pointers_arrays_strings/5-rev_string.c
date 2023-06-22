@@ -11,11 +11,12 @@
 void rev_string(char *s)
 {
 	int c = 0, i;
-	char *srev = s;
+	char *srev;
 	char *end;
 	char *begin;
 	char aux;
 
+	srev = s;
 	while (srev[c] != '\0')
 	{
 		c++;
