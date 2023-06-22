@@ -18,10 +18,10 @@ void rev_string(char *s)
 	while (s[c] != '\0')
 		c++;
 
-	while (c >= 0)
+	while (c > 0)
 	{
+		*s = srev[c];
 		c--;
-		s[c] = srev[c];
 	}
 	_putchar('\n');
 }
