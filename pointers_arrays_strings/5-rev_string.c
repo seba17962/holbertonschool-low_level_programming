@@ -1,39 +1,27 @@
 #include "main.h"
-
-/**
- *rev_string - print a string.
- *
- *@s: string
- *
- */
-
-
-void rev_string(char *s)
+#include <stdio.h>
+void
+rev_string(char *s)
 {
-	int c = 0, i, p;
-	char *srev;
-	char *end;
-	char *begin;
-	char aux;
-
-	begin = s;
-	srev = s;
-	while (srev[c] != '\0')
+	int l = 0;
+	int z, e;
+	char t;
+	if (s == NULL)
 	{
-		c++;
+		return;
 	}
-	end = s + c - 1;
-	if (c % 2 == 0)
-		p = (c - 1) / 2;
-	else
-		p = (c + 1) / 2;
-
-	for (i = 0; i < p; i++)
+	while (s[l] != '\0')
 	{
-		aux = *begin;
-		*begin = *end;
-		*end = aux;
-		begin++;
-		end--;
+		l++;
+	}
+	z = 0;
+	e = l - 1;
+	while (z < e)
+	{
+		t = s[z];
+		s[z] = s[e];
+		s[e] = t;
+		z++;
+		e--;
 	}
 }
