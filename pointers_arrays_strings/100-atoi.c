@@ -16,16 +16,16 @@ int _atoi(char *s)
 	int res;
 
 	do {
-		if (s[r] >= '0' && s[r] <= '9')
+		if (*s >= '0' && *s <= '9')
 		{
-			res = (res * 10) + (s[r] - '0');
+			res = (res * 10) + (*s - '0');
 		}
-		else if (s[r] == '-')
+		else if (*s == '-')
 		{
 			sig *= -1;
 		}
 		else if (res > 0)
 			break;
-	} while (s[r]++);
+	} while (*s++);
 	return (res * sig);
 }
