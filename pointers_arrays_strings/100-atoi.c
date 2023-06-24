@@ -24,9 +24,9 @@ int _atoi(char *s)
 			res = (res * 10) + (*s - '0');
 		}
 
-		else if (res == 0)
+		else if (res > 0)
 		{
-			return (0);
+			break;
 		}
 		} while (*s++);
 	nb = res * sig;
