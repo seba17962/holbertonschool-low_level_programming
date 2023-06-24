@@ -12,7 +12,7 @@
 int _atoi(char *s)
 {
 	int sig = 1;
-	int res;
+	unsigned int res;
 	int nb;
 
 	do {
