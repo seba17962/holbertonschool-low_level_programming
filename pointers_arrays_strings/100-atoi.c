@@ -11,21 +11,20 @@
 
 int _atoi(char *s)
 {
-	int r = 0;
 	int sig = 1;
 	int res;
 
 	do {
-		if (*s >= '0' && *s <= '9')
-		{
-			res = (res * 10) + (*s - '0');
-		}
-		else if (*s == '-')
-		{
-			sig *= -1;
-		}
-		else if (res > 0)
-			break;
-	} while (*s++);
+			if (*s >= '0' && *s <= '9')
+			{
+				res = (res * 10) + (*s - '0');
+			}
+			else if (*s == '-')
+			{
+				sig *= -1;
+			}
+			else if (res > 0)
+				break;
+		} while (*s++);
 	return (res * sig);
 }
