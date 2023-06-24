@@ -16,7 +16,7 @@ int _atoi(char *s)
 	int nb;
 
 	do {
-		if (*s >= 0 && *s <= 9)
+		if (*s >= '0' && *s <= '9')
 		{
 			res = (res * 10) + (*s - '0');
 		}
@@ -24,9 +24,9 @@ int _atoi(char *s)
 		{
 			sig *= -1;
 		}
-		else if (res <= 0)
+		else if (res > 0)
 		{
-			return (0);
+			break;
 		}
 		} while (*s++);
 	nb = res * sig;
