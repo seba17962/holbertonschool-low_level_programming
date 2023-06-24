@@ -12,7 +12,7 @@
 int _atoi(char *s)
 {
 	int sig = 1;
-	unsigned int res;
+	int res = 0;
 	int nb;
 
 	do {
@@ -26,7 +26,7 @@ int _atoi(char *s)
 
 		else if (res == 0)
 		{
-			break;
+			return (0);
 		}
 		} while (*s++);
 	nb = res * sig;
