@@ -12,16 +12,36 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	int i;
 	int len_src = 0;
-
+	int len_dest = 0;
 
 	while (src[len_src] != '\0')
 	{
-	len_src++;
+		len_src++;
 	}
 
-	for (i = 0; src[i] != src[n]; i++)
+	while (dest[len_dest] != '\0')
 	{
-	dest[i] = src[i];
+		len_dest++;
+	}
+
+	if (len_src >= len_dest)
+	{
+		for (i = 0; src[i] != src[n]; i++)
+		{
+			dest[i] = src[i];
+		}
+	}
+
+	if (len_src < len_dest)
+	{
+		for (i = 0; src[i] != dest[len_dest]; i++)
+		{
+			dest[i] = src[i];
+		}
+		for (i = 0; dest[i + len_dest] != src[n]; i++)
+		{
+			dest[i + len_dest] = '\0';
+		}
 	}
 	return (dest);
 }
