@@ -13,10 +13,13 @@ char *cap_string(char *s)
 ')', '{', '}'};
 	int i, j;
 
-	s[0] = s[0] - 32;
+	if (s[0] > 96)
+	{
+		s[0] = s[0] - 32;
+	}
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (j = 0; j <= 14; j++)
+		for (j = 0; j < 14; j++)
 		{
 			if (s[i] == sep[j] && s[i + 1] > 96)
 			{
