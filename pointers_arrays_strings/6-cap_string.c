@@ -25,10 +25,12 @@ char *cap_string(char *s)
 			{
 				s[i + 1] = s[i + 1] - 32;
 			}
-			/**else if (s[i] == '.' && s[i + 1] == '\n' && s[i + 2] > 96)
-			{
-				s[i + 2] = s[i + 2] - 32;
-			}*/
+			/*
+			*else if (s[i] == '.' && s[i + 1] == '\n' && s[i + 2] > 96)
+			*{
+			*	s[i + 2] = s[i + 2] - 32;
+			*}
+			*/
 			else
 				break;
 		}
