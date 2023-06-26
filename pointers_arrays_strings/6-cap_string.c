@@ -21,9 +21,9 @@ char *cap_string(char *s)
 	{
 		for (j = 0; j < 14; j++)
 		{
-			if (s[i] == sep[j] && s[i + 1] >= 'a' && s[i + 1] <= 'z')
+			if (s[i - 1] == sep[j] && s[i] >= 'a' && s[i] <= 'z')
 			{
-				s[i + 1] = s[i + 1] - 32;
+				s[i] -= 32;
 			}
 			/*
 			*else if (s[i] == '.' && s[i + 1] == '\n' && s[i + 2] > 96)
