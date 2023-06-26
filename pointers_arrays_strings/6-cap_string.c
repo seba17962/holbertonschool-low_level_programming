@@ -15,22 +15,17 @@ char *cap_string(char *s)
 
 	if (s[0] > 96)
 	{
-		s[0] = s[0] - 32;
+		s[0] -= 32;
 	}
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		for (j = 0; j < 14; j++)
 		{
-			if (s[i - 1] == sep[j] && s[i] >= 'a' && s[i] <= 'z')
+			if (sep[j] == s[i - 1] && s[i] >= 'a' && s[i] <= 'z')
 			{
 				s[i] -= 32;
 			}
-			/*
-			*else if (s[i] == '.' && s[i + 1] == '\n' && s[i + 2] > 96)
-			*{
-			*	s[i + 2] = s[i + 2] - 32;
-			*}
-			*/
+
 			else
 				break;
 		}
