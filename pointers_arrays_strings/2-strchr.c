@@ -10,14 +10,12 @@
 char *_strchr(char *s, char c)
 {
 	int i;
-	char **first_ocurrence;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] == c)
 		{
-			first_ocurrence = &s;
-			return (*first_ocurrence);
+			return (s + i);
 		}
 	}
 	return (NULL);
