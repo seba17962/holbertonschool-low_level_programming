@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- *leet - this function wncode a string into 1337
+ *leet - this function encode a string into 1337
  *
  *@s: the string to encode into 1337
- * Return: 
+ * Return: the string encode
  */
 
 
@@ -12,7 +12,7 @@ char *leet(char *s)
 {
 	int i, j;
 	char code[6] = {'a', 'e', 'o', 't', 'l'};
-	char encod[6] = {'4', '3', '0', '7', '1'}
+	char encode[6] = {'4', '3', '0', '7', '1'};
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
@@ -20,9 +20,9 @@ char *leet(char *s)
 		{
 			if (s[i] == code[j] || s[i] == code[j] - 32)
 			{
-				s[i] = encode[j]
+				s[i] = encode[j];
 			}
 		}
 	}
-	return (s)
+	return (s);
 }
