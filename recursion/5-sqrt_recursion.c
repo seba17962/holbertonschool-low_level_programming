@@ -5,9 +5,13 @@
  * @n: the number to square root.
  * Return: a natural number.
  */
+/**
+ * aux - auxiliar funcion
+ * @a: down limit.
+ * @b: up limit.
+ */
 
-int
-aux(int a, int b)
+int aux(int a, int b)
 {
 	if ((b * b) == a)
 		return (b);
