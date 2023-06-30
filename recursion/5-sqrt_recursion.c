@@ -1,17 +1,9 @@
 #include "main.h"
 
-/**
- * _sqrt_recursion - returns the natural square root of a number
- * @n: the number to square root.
- * Return: a natural number.
- */
-/**
- * aux - auxiliar funcion
- * @a: down limit.
- * @b: up limit.
- */
 
-int aux(int a, int b)
+
+int
+aux(int a, int b)
 {
 	if ((b * b) == a)
 		return (b);
@@ -24,7 +16,8 @@ int aux(int a, int b)
 
 
 
-int _sqrt_recursion(int n)
+int
+_sqrt_recursion(int n)
 {
 	int b = 0;
 
