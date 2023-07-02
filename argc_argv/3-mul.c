@@ -12,11 +12,12 @@ main(int argc, char *argv[])
 		{
 			mul *= atoi(argv[i]);
 		}
-		return (0);
 	}
 	else if (argc <= 1)
 	{
 		printf("Error");
 		return (1);
 	}
+
+	return (0);
 }
