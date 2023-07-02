@@ -12,6 +12,7 @@ main(int argc, char *argv[])
 		{
 			mul *= atoi(argv[i]);
 		}
+		printf("%d\n", mul);
 	}
 	else if (argc <= 1)
 	{
@@ -19,5 +20,5 @@ main(int argc, char *argv[])
 		return (1);
 	}
 
-	return (mul);
+	return (0);
 }
