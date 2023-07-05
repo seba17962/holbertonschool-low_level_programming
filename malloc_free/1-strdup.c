@@ -9,7 +9,7 @@
 
 char *_strdup(char *str)
 {
-	char *buffer;
+	char *s;
 	int i, len = 0;
 
 	while (str[len] != '\0')
@@ -20,16 +20,16 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	buffer = malloc(sizeof(char) * len);
+	s = malloc(sizeof(char) * len);
 
-	if (buffer == NULL)
+	if (s == NULL)
 	{
 		return (NULL);
 	}
 	for (i = 0; i <= len; i++)
 	{
-		buffer[i] = str[i];
+		s[i] = str[i];
 	}
 
-	return (buffer);
+	return (s);
 }
