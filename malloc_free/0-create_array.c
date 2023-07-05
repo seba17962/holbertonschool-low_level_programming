@@ -25,7 +25,7 @@ char
 	{
 		return (NULL);
 	}
-	for (i = 0; array[i] != '\0'; i++)
+	for (i = 0; i < size; i++)
 	{
 		array[i] = c;
 	}
