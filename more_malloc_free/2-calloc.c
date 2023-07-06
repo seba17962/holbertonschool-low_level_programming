@@ -10,19 +10,18 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *call = NULL;
+	unsigned char *call = NULL;
 	unsigned int i = 0;
 	unsigned int sum = 0;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	sum = nmemb + size;
+	sum = nmemb * size;
 	call = malloc(sizeof(char) * sum);
 
 	if (call == NULL)
 	{
-		free(call);
 		return (NULL);
 	}
 	for (i = 0; i < sum; i++)
