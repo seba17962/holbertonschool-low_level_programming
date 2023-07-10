@@ -1,3 +1,6 @@
+#ifdef DOG_TYPE
+#define DOG_TYPE
+
 #include <stdio.h>
 
 /**
@@ -8,10 +11,11 @@
  */
 
 
-struct dog 
+struct dog
 {
 	char *name;
 	float age;
 	char *owner;
 };
 
+#endif 
