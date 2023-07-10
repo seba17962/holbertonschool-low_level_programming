@@ -1,5 +1,5 @@
-#ifdef DOG_TYPE
-#define DOG_TYPE
+#ifdef DOG_H
+#define DOG_H
 
 #include <stdio.h>
 
