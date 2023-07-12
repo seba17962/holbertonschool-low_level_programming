@@ -27,7 +27,7 @@ int op_sub(int a, int b)
 {
 	int dif = 0;
 
-	dif = abs(a - b);
+	dif = (a - b);
 	return (dif);
 }
 /**
