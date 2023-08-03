@@ -15,7 +15,6 @@ int main(int argc, char *argv[])
 {
 	int fd1, fd2, w, r;
 	char buff[10000], *file_f, *file_t;
-	mode_t mode = S_IRUSR | S_IWUSR;
 
 	if (argc != 3)
 	{
@@ -26,7 +25,7 @@ int main(int argc, char *argv[])
 	file_t = argv[2];
 
 	fd1 = open(file_f, O_RDONLY);
-	fd2 = open(file_t, O_WRONLY | O_CREAT | O_TRUNC, mode);
+	fd2 = open(file_t, O_WRONLY | O_CREAT | O_TRUNC, 0644);
 
 	if (fd1 == -1)
 	{
