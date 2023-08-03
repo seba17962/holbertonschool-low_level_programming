@@ -39,9 +39,7 @@ int main(int argc, char *argv[])
 		close(fd1);
 		exit(99);
 	}
-
-	r = read(fd1, buff, sizeof(buff));
-	while (r > 0)
+	while ((r = read(fd1, buff, sizeof(buff))) > 0)
 	{
 		w = write(fd2, buff, r);
 		if (w == -1)
